@@ -1,14 +1,15 @@
 # Face Detection and Face Recognition
 
-Welcome to the Face Detection and Face Recognition project! This project provides you with the ability to detect faces in images or video streams and recognize faces using Python. Below, you'll find detailed instructions on how to set up the environment and run the scripts for face detection and facial recognition.
+Welcome to the Face Detection and Face Recognition project! This project provides you with the ability to detect faces in images or video streams and recognize faces using Python. Below, you'll find detailed instructions on how to set up the environment, run the scripts for face detection and facial recognition, and also how to set up the database folder.
 
 ## Table of Contents
 1. [Description](#description)
 2. [Prerequisites](#prerequisites)
 3. [Setting up the Environment](#setting-up-the-environment)
-4. [Running the Scripts](#running-the-scripts)
-5. [Usage](#usage)
-6. [License](#license)
+4. [Setting up the Database Folder](#setting-up-the-database-folder)
+5. [Running the Scripts](#running-the-scripts)
+6. [Usage](#usage)
+7. [License](#license)
 
 ## Description
 
@@ -20,7 +21,27 @@ Before you can start using the face detection and recognition scripts, make sure
 
 1. **Python**: Python is the programming language used for this project. If you don't have Python installed on your system, you can download and install it from [here](https://www.python.org/downloads/).
 
-2. **Visual Studio C++ Build Tools**: These tools are necessary for compiling certain dependencies required by the libraries used in this project. You can install Visual Studio C++ Build Tools from [here](https://visualstudio.microsoft.com/visual-cpp-build-tools/).
+2. **Visual Studio C++ Build Tools**: These tools are necessary for compiling certain dependencies required by the libraries used in this project. Follow the steps below to download and install Visual Studio along with the required workload for "Desktop Development with C++":
+
+    - **Step 1: Download Visual Studio**
+        - Navigate to [Visual Studio Downloads](https://visualstudio.microsoft.com/downloads/) website.
+        - Click on the "Download Visual Studio" button.
+        - Follow the on-screen instructions to download the Visual Studio installer.
+        - Once the installer is downloaded, run it.
+
+    - **Step 2: Download and install the workload: "Desktop Development with C++"**
+        - Open the Visual Studio Installer.
+        - Select "Visual Studio C++ Build Tools" from the list of available products.
+        - Click on "Install" to download and install the workload.
+        - Follow the on-screen instructions to complete the installation.
+
+    - **Step 3: Customize Installation (Optional)**
+        - If you want to customize the installation or select additional components, you can do so by clicking on the "Individual components" tab.
+        - Here, you can browse and select additional components based on your requirements.
+
+    - **Step 4: Install**
+        - After selecting the desired workload and components, click on the "Install" button to begin the installation process.
+        - Follow the on-screen instructions to complete the installation.
 
 3. **CMake**: CMake is a cross-platform build system that is used to control the software compilation process. Download and install CMake from [here](https://cmake.org/download/).
 
@@ -52,6 +73,17 @@ To ensure a smooth running of the scripts, it's recommended to set up a Python v
         pip install opencv-python
         pip install face-recognition
         ```
+
+## Setting up the Database Folder
+
+To set up the database folder for storing person's photos, so that this can be loaded and used by our face_rec.py script, follow these steps:
+
+1. **Create a Folder**:
+    - Create a folder named `persons_data` in your project directory. This folder will store the photos of the persons for facial recognition.
+
+2. **Add Person's Photos**:
+    - Inside the `persons_data` folder, add the photos of the persons you want to recognize. 
+    - Name each photo file with the person's name. For example, if you have a photo of John Doe, name the file `John_Doe.jpg`.
 
 ## Running the Scripts
 
